@@ -1,0 +1,28 @@
+# Electron-builder configuration for the obfuscated "protected" build.
+# Used via: npm run package:protected  (electron-builder --config electron-builder.protected.yml)
+# This file fully replaces the "build" section of package.json, so it must stay self-contained.
+appId: com.gymmanager.app
+productName: Gym Manager
+directories:
+  output: ../Gym Manager Production
+  buildResources: build
+npmRebuild: false
+files:
+  - out/**
+  - resources/**
+  - '!**/*.map'
+win:
+  target:
+    - target: nsis
+      arch:
+        - x64
+  icon: build/icon.png
+  executableName: gym-manager
+nsis:
+  oneClick: false
+  perMachine: false
+  allowToChangeInstallationDirectory: true
+  createDesktopShortcut: true
+  createStartMenuShortcut: true
+  shortcutName: Gym Manager
+  artifactName: '${productName}-${version}-setup.${ext}'
