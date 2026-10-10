@@ -6,6 +6,34 @@ turnstile access control — built with Electron, React and TypeScript.
 Every access decision (open / deny / why) is made in the **backend main process** and written to an
 access log. The UI never decides access on its own.
 
+## Screenshots
+
+All screens below run on demo data (Dashboard → Generate demo data, administrator only).
+
+| Dashboard | Live Access |
+| --- | --- |
+| ![Dashboard](docs/screenshots/dashboard.png) | ![Live Access](docs/screenshots/live-access.png) |
+
+| Clients | Subscriptions |
+| --- | --- |
+| ![Clients](docs/screenshots/clients.png) | ![Subscriptions](docs/screenshots/subscriptions.png) |
+
+| RFID Cards | Attendance |
+| --- | --- |
+| ![RFID Cards](docs/screenshots/rfid-cards.png) | ![Attendance](docs/screenshots/attendance.png) |
+
+| Access Control | Payments |
+| --- | --- |
+| ![Access Control](docs/screenshots/access-control.png) | ![Payments](docs/screenshots/payments.png) |
+
+| Reports | Settings |
+| --- | --- |
+| ![Reports](docs/screenshots/reports.png) | ![Settings](docs/screenshots/settings.png) |
+
+| Users | Audit |
+| --- | --- |
+| ![Users](docs/screenshots/users.png) | ![Audit](docs/screenshots/audit.png) |
+
 ## Modules
 
 | Page             | What it does                                                                     |
